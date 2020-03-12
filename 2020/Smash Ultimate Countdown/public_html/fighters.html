@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Fighters</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" type="image/png" href="https://vignette.wikia.nocookie.net/kirby--fanon/images/4/4d/Smash_Icon.png/revision/latest?cb=20150920001629&amp;path-prefix=es">
+        <link rel="stylesheet" href="SmashCountdownCSS.css"> 
+    </head>
+    <body id="fightersMain">
+        <!--displays message if user has disabled JavaScript-->
+        <noscript>Please enable JavaScript to run this app.</noscript>
+        
+        <div id="titleBar">
+            <h1 id="fightersHeader">CHOOSE YOUR FIGHTER</h1>
+        </div>
+        
+        <!--Side navigation bar-->
+        <div id ="sidebar" class="sidenav">  
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            
+            <a href="index.html">Home</a>
+            <a href="https://www.smashbros.com/en_US/about/index.html" target="_blank">About</a> 
+            <a href="fighters.html" target="_blank" id="nav_Fighters">Fighters</a>
+            <a href="https://www.smashbros.com/en_US/howtoplay/index.html" target="_blank" id="nav_HowtoSmash">How to Smash</a>
+            <a href="https://www.smashbros.com/en_US/stage/index.html" target="_blank" id="nav_Stages">Stages</a>
+            <a href="https://www.smashbros.com/en_US/item/index.html" target="_blank" id="nav_Items">Items</a>
+            <a href="https://www.smashbros.com/en_US/sound/index.html" target="_blank" id="nav_Music">Music</a>
+            <a href="https://www.smashbros.com/en_US/movie/index.html" target="_blank" id="nav_Videos">Videos</a>
+            <a href="https://www.smashbros.com/en_US/blog/index.html" target="_blank" id="nav_Blog">Super Smash Blog.</a>      
+            <a href="https://smashbros.nintendo.com/buy/" target="_blank">Purchase</a>        
+        </div>
+        
+        <span id="sw" style="font-size:40px;cursor:pointer;color:white;" onclick="openNav()">&#9776;</span>
+        
+        <script>
+            //Opens the sidebar
+            function openNav(){
+                document.getElementById("sidebar").style.width = "250px";
+            }
+            
+            //Closes the sidebar 
+            function closeNav(){
+                document.getElementById("sidebar").style.width = "0px";
+            }
+        </script>
+        
+        <!--Displays clickable icons that will take the user to the respective fighters info page-->
+        <div id="fighters"> 
+            
+            <!--Mario-->
+            <a href="https://www.smashbros.com/en_US/fighter/01.html" target="_blank">
+                <img alt="Mario" src="https://www.smashbros.com/assets_v2/img/fighter/pict/mario.png">
+            </a>
+            <!--Donkey Kong-->
+            <a href="https://www.smashbros.com/en_US/fighter/02.html" target="_blank">
+                <img alt="Donkey Kong" src="https://www.smashbros.com/assets_v2/img/fighter/pict/donkey_kong.png">
+            </a>
+            <!--Link-->
+            <a href="https://www.smashbros.com/en_US/fighter/03.html" target="_blank">
+                <img alt="Link" src="https://www.smashbros.com/assets_v2/img/fighter/pict/link.png">
+            </a>
+            <!--Samus-->
+            <a href="https://www.smashbros.com/en_US/fighter/04.html" target="_blank">
+                <img alt="Samus" src="https://www.smashbros.com/assets_v2/img/fighter/pict/samus.png">
+            </a>
+            <!--Dark Samus-->
+            <a href="https://www.smashbros.com/en_US/fighter/04e.html" target="_blank">
+                <img alt="Dark Samus" src="https://www.smashbros.com/assets_v2/img/fighter/pict/dark_samus.png">
+            </a>
+            <!--Yoshi-->
+            <a href="https://www.smashbros.com/en_US/fighter/05.html" target="_blank">
+                <img alt="Yoshi" src="https://www.smashbros.com/assets_v2/img/fighter/pict/yoshi.png">
+            </a>
+            <!--Kirby-->
+            <a href="https://www.smashbros.com/en_US/fighter/06.html" target="_blank">
+                <img alt="Kirby" src="https://www.smashbros.com/assets_v2/img/fighter/pict/kirby.png">
+            </a>
+            <!--Fox-->
+            <a href="https://www.smashbros.com/en_US/fighter/07.html" target="_blank">
+                <img alt="Fox" src="https://www.smashbros.com/assets_v2/img/fighter/pict/fox.png">
+            </a>
+            <!--Pikachu-->
+            <a href="https://www.smashbros.com/en_US/fighter/08.html" target="_blank">
+                <img alt="Pikachu" src="https://www.smashbros.com/assets_v2/img/fighter/pict/pikachu.png">
+            </a>
+            <!--Luigi-->
+            <a href="https://www.smashbros.com/en_US/fighter/09.html" target="_blank">
+                <img alt="Luigi" src="https://www.smashbros.com/assets_v2/img/fighter/pict/luigi.png">
+            </a>
+            <!--Ness-->
+            <a href="https://www.smashbros.com/en_US/fighter/10.html" target="_blank">
+                <img alt="Ness" src="https://i.imgur.com/pCCbWjF.png">
+            </a>
+            <!--Captain Falcon-->
+            <a href="https://www.smashbros.com/en_US/fighter/11.html" target="_blank">
+                <img alt="C.Falcon" src="https://www.smashbros.com/assets_v2/img/fighter/pict/captain_falcon.png">
+            </a>
+            <!--Jigglypuff-->
+            <a href="https://www.smashbros.com/en_US/fighter/12.html" target="_blank">
+                <img alt="Jigglypuff" src="https://www.smashbros.com/assets_v2/img/fighter/pict/jigglypuff.png">
+            </a>
+            <!--Peach-->
+            <a href="https://www.smashbros.com/en_US/fighter/13.html" target="_blank">
+                <img alt="Peach" src="https://www.smashbros.com/assets_v2/img/fighter/pict/peach.png">
+            </a>
+            <!--Daisy-->
+            <a href="https://www.smashbros.com/en_US/fighter/13e.html" target="_blank">
+                <img alt="Daisy" src="https://www.smashbros.com/assets_v2/img/fighter/pict/daisy.png">
+            </a>
+            <!--Bowser-->
+            <a href="https://www.smashbros.com/en_US/fighter/14.html" target="_blank">
+                <img alt="Bowser" src="https://www.smashbros.com/assets_v2/img/fighter/pict/bowser.png">
+            </a>
+            <!--Ice Climbers-->
+            <a href="https://www.smashbros.com/en_US/fighter/15.html" target="_blank">
+                <img alt="Ice Climbers" src="https://www.smashbros.com/assets_v2/img/fighter/pict/ice_climbers.png">
+            </a>
+            <!--Sheik-->
+            <a href="https://www.smashbros.com/en_US/fighter/16.html" target="_blank">
+                <img alt="Sheik" src="https://www.smashbros.com/assets_v2/img/fighter/pict/sheik.png">
+            </a>
+            <!--Zelda-->
+            <a href="https://www.smashbros.com/en_US/fighter/17.html" target="_blank">
+                <img alt="Zelda" src="https://www.smashbros.com/assets_v2/img/fighter/pict/zelda.png">
+            </a>
+            <!--Dr. Mario-->
+            <a href="https://www.smashbros.com/en_US/fighter/18.html" target="_blank">
+                <img alt="Dr. Mario" src="https://www.smashbros.com/assets_v2/img/fighter/pict/dr_mario.png">
+            </a>
+            <!--Pichu-->
+            <a href="https://www.smashbros.com/en_US/fighter/19.html" target="_blank">
+                <img alt="Pichu" src="https://www.smashbros.com/assets_v2/img/fighter/pict/pichu.png">
+            </a>
+            <!--Falco-->
+            <a href="https://www.smashbros.com/en_US/fighter/20.html" target="_blank">
+                <img alt="Falco" src="https://www.smashbros.com/assets_v2/img/fighter/pict/falco.png">
+            </a>
+            <!--Marth-->
+            <a href="https://www.smashbros.com/en_US/fighter/21.html" target="_blank">
+                <img alt="Marth" src="https://www.smashbros.com/assets_v2/img/fighter/pict/marth.png">
+            </a>
+            <!--Lucina-->
+            <a href="https://www.smashbros.com/en_US/fighter/21e.html" target="_blank">
+                <img alt="Lucina" src="https://www.smashbros.com/assets_v2/img/fighter/pict/lucina.png">
+            </a>
+            <!--Young Link-->
+            <a href="https://www.smashbros.com/en_US/fighter/22.html" target="_blank">
+                <img alt="Young Link" src="https://www.smashbros.com/assets_v2/img/fighter/pict/young_link.png">
+            </a>
+            <!--Ganondorf-->
+            <a href="https://www.smashbros.com/en_US/fighter/23.html" target="_blank">
+                <img alt="Ganondorf" src="https://www.smashbros.com/assets_v2/img/fighter/pict/ganondorf.png">
+            </a>
+            <!--Mewtwo-->
+            <a href="https://www.smashbros.com/en_US/fighter/24.html" target="_blank">
+                <img alt="Mewtwo" src="https://www.smashbros.com/assets_v2/img/fighter/pict/mewtwo.png">
+            </a>
+            <!--Roy-->
+            <a href="https://www.smashbros.com/en_US/fighter/25.html" target="_blank">
+                <img alt="Roy" src="https://www.smashbros.com/assets_v2/img/fighter/pict/roy.png">
+            </a>
+            <!--Chrom-->
+            <a href="https://www.smashbros.com/en_US/fighter/25e.html" target="_blank">
+                <img alt="Chrom" src="https://www.smashbros.com/assets_v2/img/fighter/pict/chrom.png">
+            </a>
+            <!--Mr. Game & Watch-->
+            <a href="https://www.smashbros.com/en_US/fighter/26.html" target="_blank">
+                <img alt="Mr. Game & Watch" src="https://www.smashbros.com/assets_v2/img/fighter/pict/mr_game_and_watch.png">
+            </a>
+            <!--Meta Knight-->
+            <a href="https://www.smashbros.com/en_US/fighter/27.html" target="_blank">
+                <img alt="Meta Knight" src="https://www.smashbros.com/assets_v2/img/fighter/pict/meta_knight.png">
+            </a>
+            <!--Pit-->
+            <a href="https://www.smashbros.com/en_US/fighter/28.html" target="_blank">
+                <img alt="Pit" src="https://www.smashbros.com/assets_v2/img/fighter/pict/pit.png">
+            </a>
+            <!--Dark Pit-->
+            <a href="https://www.smashbros.com/en_US/fighter/28e.html" target="_blank">
+                <img alt="Dark Pit" src="https://www.smashbros.com/assets_v2/img/fighter/pict/dark_pit.png">
+            </a>
+            <!--Zero Suit Samus-->
+            <a href="https://www.smashbros.com/en_US/fighter/29.html" target="_blank">
+                <img alt="Zero Suit Samus" src="https://www.smashbros.com/assets_v2/img/fighter/pict/zero_suit_samus.png">
+            </a>
+            <!--Wario-->
+            <a href="https://www.smashbros.com/en_US/fighter/30.html" target="_blank">
+                <img alt="Wario" src="https://www.smashbros.com/assets_v2/img/fighter/pict/wario.png">
+            </a>
+            <!--Snake-->
+            <a href="https://www.smashbros.com/en_US/fighter/31.html" target="_blank">
+                <img alt="Snake" src="https://www.smashbros.com/assets_v2/img/fighter/pict/snake.png">
+            </a>
+            <!--Ike-->
+            <a href="https://www.smashbros.com/en_US/fighter/32.html" target="_blank">
+                <img alt="Ike" src="https://www.smashbros.com/assets_v2/img/fighter/pict/ike.png">
+            </a>
+            <!--Pokemon Trainer-->
+            <a href="https://www.smashbros.com/en_US/fighter/33-35.html" target="_blank">
+                <img alt="Pokemon Trainer" src="https://www.smashbros.com/assets_v2/img/fighter/pict/pokemon_trainer.png">
+            </a>
+            <!--Diddy Kong-->
+            <a href="https://www.smashbros.com/en_US/fighter/36.html" target="_blank">
+                <img alt="Diddy Kong" src="https://www.smashbros.com/assets_v2/img/fighter/pict/diddy_kong.png">
+            </a>
+            <!--Lucas-->
+            <a href="https://www.smashbros.com/en_US/fighter/37.html" target="_blank">
+                <img alt="Lucas" src="https://www.smashbros.com/assets_v2/img/fighter/pict/lucas.png">
+            </a>
+            <!--Sonic-->
+            <a href="https://www.smashbros.com/en_US/fighter/38.html" target="_blank">
+                <img alt="Sonic" src="https://www.smashbros.com/assets_v2/img/fighter/pict/sonic.png">
+            </a>
+            <!--King Dedede-->
+            <a href="https://www.smashbros.com/en_US/fighter/39.html" target="_blank">
+                <img alt="King Dedede" src="https://www.smashbros.com/assets_v2/img/fighter/pict/king_dedede.png">
+            </a>
+            <!--Olimar-->
+            <a href="https://www.smashbros.com/en_US/fighter/40.html" target="_blank">
+                <img alt="Olimar" src="https://www.smashbros.com/assets_v2/img/fighter/pict/olimar.png">
+            </a>
+            <!--Lucario-->
+            <a href="https://www.smashbros.com/en_US/fighter/41.html" target="_blank">
+                <img alt="Lucario" src="https://www.smashbros.com/assets_v2/img/fighter/pict/lucario.png">
+            </a>
+            <!--R.O.B-->
+            <a href="https://www.smashbros.com/en_US/fighter/42.html" target="_blank">
+                <img alt="R.O.B" src="https://www.smashbros.com/assets_v2/img/fighter/pict/rob.png">
+            </a>
+            <!--Toon Link-->
+            <a href="https://www.smashbros.com/en_US/fighter/43.html" target="_blank">
+                <img alt="Toon Link" src="https://www.smashbros.com/assets_v2/img/fighter/pict/toon_link.png">
+            </a>
+            <!--Wolf-->
+            <a href="https://www.smashbros.com/en_US/fighter/44.html" target="_blank">
+                <img alt="Wolf" src="https://www.smashbros.com/assets_v2/img/fighter/pict/wolf.png">
+            </a>
+            <!--Villager-->
+            <a href="https://www.smashbros.com/en_US/fighter/45.html" target="_blank">
+                <img alt="Villager" src="https://www.smashbros.com/assets_v2/img/fighter/pict/villager.png">
+            </a>
+            <!--Mega Man-->
+            <a href="https://www.smashbros.com/en_US/fighter/46.html" target="_blank">
+                <img alt="Mega Man" src="https://www.smashbros.com/assets_v2/img/fighter/pict/mega_man.png">
+            </a>
+            <!--Wii Fit Trainer-->
+            <a href="https://www.smashbros.com/en_US/fighter/47.html" target="_blank">
+                <img alt="Wii Fit Trainer" src="https://www.smashbros.com/assets_v2/img/fighter/pict/wii_fit_trainer.png">
+            </a>
+            <!--Rosalina & Luma-->
+            <a href="https://www.smashbros.com/en_US/fighter/48.html" target="_blank">
+                <img alt="Rosalina & Luma" src="https://www.smashbros.com/assets_v2/img/fighter/pict/rosalina_and_luma.png">
+            </a>
+            <!--Little Mac-->
+            <a href="https://www.smashbros.com/en_US/fighter/49.html" target="_blank">
+                <img alt="Little Mac" src="https://www.smashbros.com/assets_v2/img/fighter/pict/little_mac.png">
+            </a>
+            <!--Greninja-->
+            <a href="https://www.smashbros.com/en_US/fighter/50.html" target="_blank">
+                <img alt="Greninja" src="https://www.smashbros.com/assets_v2/img/fighter/pict/greninja.png">
+            </a>
+            <!--Mii Fighter-->
+            <a href="https://www.smashbros.com/en_US/fighter/51-53.html" target="_blank">
+                <img alt="Mii Fighter" src="https://www.smashbros.com/assets_v2/img/fighter/pict/mii_fighter.png">
+            </a>
+            <!--Palutena-->
+            <a href="https://www.smashbros.com/en_US/fighter/54.html" target="_blank">
+                <img alt="Palutena" src="https://www.smashbros.com/assets_v2/img/fighter/pict/palutena.png">
+            </a>
+            <!--Pac-Man-->
+            <a href="https://www.smashbros.com/en_US/fighter/55.html" target="_blank">
+                <img alt="Pac-Man" src="https://www.smashbros.com/assets_v2/img/fighter/pict/pac_man.png">
+            </a>
+            <!--Robin-->
+            <a href="https://www.smashbros.com/en_US/fighter/56.html" target="_blank">
+                <img alt="Robin" src="https://www.smashbros.com/assets_v2/img/fighter/pict/robin.png">
+            </a>
+            <!--Shulk-->
+            <a href="https://www.smashbros.com/en_US/fighter/57.html" target="_blank">
+                <img alt="Shulk" src="https://www.smashbros.com/assets_v2/img/fighter/pict/shulk.png">
+            </a>
+            <!--Bowser Jr.-->
+            <a href="https://www.smashbros.com/en_US/fighter/58.html" target="_blank">
+                <img alt="Bowser Jr." src="https://www.smashbros.com/assets_v2/img/fighter/pict/bowser_jr.png">
+            </a>
+            <!--Duck Hunt-->
+            <a href="https://www.smashbros.com/en_US/fighter/59.html" target="_blank">
+                <img alt="Duck Hunt" src="https://www.smashbros.com/assets_v2/img/fighter/pict/duck_hunt.png">
+            </a>
+            <!--Ryu-->
+            <a href="https://www.smashbros.com/en_US/fighter/60.html" target="_blank">
+                <img alt="Ryu" src="https://www.smashbros.com/assets_v2/img/fighter/pict/ryu.png">
+            </a>
+            <!--Ken-->
+            <a href="https://www.smashbros.com/en_US/fighter/60e.html" target="_blank">
+                <img alt="Ken" src="https://www.smashbros.com/assets_v2/img/fighter/pict/robin.png">
+            </a>
+            <!--Cloud-->
+            <a href="https://www.smashbros.com/en_US/fighter/61.html" target="_blank">
+                <img alt="Cloud" src="https://www.smashbros.com/assets_v2/img/fighter/pict/cloud.png">
+            </a>
+            <!--Corrin-->
+            <a href="https://www.smashbros.com/en_US/fighter/62.html" target="_blank">
+                <img alt="Corrin" src="https://www.smashbros.com/assets_v2/img/fighter/pict/corrin.png">
+            </a>
+            <!--Bayonetta-->
+            <a href="https://www.smashbros.com/en_US/fighter/63.html" target="_blank">
+                <img alt="Bayonetta" src="https://www.smashbros.com/assets_v2/img/fighter/pict/bayonetta.png">
+            </a>
+            <!--Inkling-->
+            <a href="https://www.smashbros.com/en_US/fighter/64.html" target="_blank">
+                <img alt="Inkling" src="https://www.smashbros.com/assets_v2/img/fighter/pict/inkling.png">
+            </a>
+            <!--Ridley-->
+            <a href="https://www.smashbros.com/en_US/fighter/65.html" target="_blank">
+                <img alt="Ridley" src="https://www.smashbros.com/assets_v2/img/fighter/pict/ridley.png">
+            </a>
+            <!--Simon-->
+            <a href="https://www.smashbros.com/en_US/fighter/66.html" target="_blank">
+                <img alt="Simon" src="https://www.smashbros.com/assets_v2/img/fighter/pict/simon.png">
+            </a>
+            <!--Richter-->
+            <a href="https://www.smashbros.com/en_US/fighter/66e.html" target="_blank">
+                <img alt="Richter" src="https://www.smashbros.com/assets_v2/img/fighter/pict/richter.png">
+            </a>
+            <!--King K. Rool-->
+            <a href="https://www.smashbros.com/en_US/fighter/67.html" target="_blank">
+                <img alt="King K. Rool" src="https://www.smashbros.com/assets_v2/img/fighter/pict/king_k_rool.png">
+            </a>
+            <!--Isabelle-->
+            <a href="https://www.smashbros.com/en_US/fighter/68.html" target="_blank">
+                <img alt="Isabelle" src="https://www.smashbros.com/assets_v2/img/fighter/pict/isabelle.png">
+            </a>
+                <!--Incineroar-->
+            <a href="https://www.smashbros.com/en_US/fighter/69.html" target="_blank">
+                <img alt="Incineroar" src="https://www.smashbros.com/assets_v2/img/fighter/pict/incineroar.png">
+            </a>
+             
+        </div>
+        
+        <div class="blog">
+            <a href="https://www.smashbros.com/en_US/blog/index.html" target="_blank"><img src="https://ssbucountdown.netlify.com/blog.png"></a>
+            </div>
+    </body>
+</html>

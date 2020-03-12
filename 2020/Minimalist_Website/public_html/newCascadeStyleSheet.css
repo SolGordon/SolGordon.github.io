@@ -1,0 +1,164 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 19-Feb-2020, 10:03:53 PM
+    Author     : solandy gordon
+*/
+.hdbzimg{
+    height:auto;
+    display: block;
+    margin-left:auto;
+    margin-right: auto;
+    max-width: 100%;
+    
+}
+
+#downloadbox{
+    padding-top: 30px;
+    text-align: center;
+}
+
+#downloadLink{
+    font-size: 30px;
+    font-family: Impact;
+    letter-spacing: 1px;
+    color: yellow;
+    text-decoration: none;
+    text-shadow:
+		-3px -3px 0 #255,
+		3px -3px 0 #255,
+		-3px 3px 0 #255,
+		3px 3px 0 #255;
+}
+
+.charHeader{
+    font-family: 'Impact';
+    color:white;
+    border-style: solid;
+    text-align: center;
+    font-size: 40px;
+    text-transform: uppercase;
+}
+
+body{
+    background: #2a333e;
+}
+
+.nav-top{    
+    list-style: none;
+}
+
+.nav-top img{
+    text-decoration: none;
+    text-align:center;
+    transition: transform 0.4s;
+    transform: scale(1);   
+}
+
+.nav-top img:hover{ 
+    transform: scale(1.2);
+}
+
+#main{
+    color:white;
+    text-align: center;
+}
+
+.imageBox a{
+    text-decoration: none;
+}
+
+.imageBox img{
+    height:200px;
+    width:300px;
+}
+
+.videoBox{
+    color: white;
+    font-family: impact;
+    text-align: center;
+}
+
+#revertTOP{   
+    padding-top: 50px;
+    text-align: center;   
+}
+
+#revertTOP a{
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 60px;
+    color:yellow;
+    text-shadow:
+		-3px -3px 0 #255,
+		3px -3px 0 #255,
+		-3px 3px 0 #255,
+		3px 3px 0 #255;
+    font-family: Impact;
+}
+
+.socialMedia{
+    padding-top: 100px;
+    text-align: center;
+    
+}
+
+.socialMedia img{
+    height:50px;
+    width:50px;
+}
+
+.socialMedia a{
+    text-decoration: none;
+}
+
+#stageBox img{
+    height:140px;
+    width:120px;
+}
+
+#musicBox{
+    text-align:center;
+}
+
+.centered{
+    text-align: center;
+    font-family: arial;
+    font-weight: bold;
+    color:white;
+}
+
+.imgBorder{
+    border: solid white;
+}
+
+.construction{
+    color:red;
+    font-size: 100px;
+    font-family: Impact;
+    text-align: center;
+}
+
+.construction img{
+    height:100px;
+    width:100px;
+}
+
+#fighterBox{
+    text-align: center;
+}
+
+#endcapImg{
+    right:0;
+    position:fixed;
+    bottom:0;   
+}
+footer{
+    padding-top: 40px;
+    color:white;
+    font-size: 15px;
+    
+}

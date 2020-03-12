@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Smash Bros. Ultimate Countdown</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" type="image/png" href="https://vignette.wikia.nocookie.net/kirby--fanon/images/4/4d/Smash_Icon.png/revision/latest?cb=20150920001629&amp;path-prefix=es">
+        <link rel="stylesheet" href="SmashCountdownCSS.css"> 
+        
+    </head>
+    
+    <body id="main">   
+        <!--displays message if user has disabled JavaScript-->
+        <noscript>Please enable JavaScript to run this app.</noscript>
+        
+        
+        <div class="game title">
+            <img class="logo" src="https://image.ibb.co/cfeRoA/Super-Smash-Bros-Ultimate-logo-svg.png">
+        </div>
+        
+        <div id ="sidebar" class="sidenav">  
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            
+            <a href="index.html">Home</a>
+            <a href="https://www.smashbros.com/en_US/about/index.html" target="_blank">About</a> 
+            <a href="fighters.html" target="_blank" id="nav_Fighters">Fighters</a>
+            <a href="https://www.smashbros.com/en_US/howtoplay/index.html" target="_blank" id="nav_HowtoSmash">How to Smash</a>
+            <a href="https://www.smashbros.com/en_US/stage/index.html" target="_blank" id="nav_Stages">Stages</a>
+            <a href="https://www.smashbros.com/en_US/item/index.html" target="_blank" id="nav_Items">Items</a>
+            <a href="https://www.smashbros.com/en_US/sound/index.html" target="_blank" id="nav_Music">Music</a>
+            <a href="https://www.smashbros.com/en_US/movie/index.html" target="_blank" id="nav_Videos">Videos</a>
+            <a href="https://www.smashbros.com/en_US/blog/index.html" target="_blank" id="nav_Blog">Super Smash Blog.</a>      
+            <a href="https://smashbros.nintendo.com/buy/" target="_blank">Purchase</a>        
+        </div>
+        
+        <span id="sw" style="font-size:40px;cursor:pointer;color:white;" onclick="openNav()">&#9776;</span>
+        
+        <script>
+            //Opens the sidebar
+            function openNav(){
+                document.getElementById("sidebar").style.width = "250px";
+                
+            }
+            
+            //Closes the sidebar 
+            function closeNav(){
+                document.getElementById("sidebar").style.width = "0px";
+                
+            }
+        </script>
+        
+        <div class="timer">
+            <p id="countdown"><b></b></p>
+            <!--Function to get current date and countdown from then till desired date-->
+            <script>
+                //Sets the date to countdown to(i.e Dec 7 midnight)
+                var countDownDate = new Date("Dec 7, 2018 00:00:00").getTime();
+                
+                //Update the count down every second
+                var x = setInterval(function(){
+                  //Gets the current time
+                var currentTime = new Date().getTime();
+                //Finds the distance between now and the count down date
+                var distance = countDownDate - currentTime;
+                //Time calculations for days, hours, minutes and seconds
+                var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+                //Outputs the result in element timer
+                document.getElementById("countdown").innerHTML = days + " days" + " : " + hours + " hours" + " : " + minutes + " minutes" + " : " + seconds + " seconds";  
+                          
+                
+                //If countdown is over, write some text
+                if(distance < 0){
+                    clearInterval(x);
+                    document.getElementById("countdown").innerHTML = "OUT NOW!";
+                }
+            },1000);
+            </script>
+        </div>
+        
+        <div id="trailer">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/2aqVlLlKkcg" frameborder="2" allowfullscreen></iframe>
+        </div>
+        
+        <div class="blog">
+            <a href="https://www.smashbros.com/en_US/blog/index.html" target="_blank"><img src="https://ssbucountdown.netlify.com/blog.png"></a>
+        </div>
+ 
+        <footer id="ugh">
+            <p id="copyright">© Website created by Solandy Gordon</p>
+        </footer>
+    </body>
+</html>
